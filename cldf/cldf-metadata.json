@@ -17,11 +17,11 @@
     },
     "notes": [
         {
+            "dc:title": "environment",
             "properties": {
                 "glottolog_version": "v3.2-87-g800df1f",
                 "concepticon_version": "pyconcepticon-1.4.0-3-g5184141"
-            },
-            "dc:title": "environment"
+            }
         }
     ],
     "tables": [
