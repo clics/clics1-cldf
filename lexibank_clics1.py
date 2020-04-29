@@ -1,33 +1,22 @@
-# coding=utf-8
-from __future__ import unicode_literals, print_function
-from itertools import groupby
-
 import attr
 import lingpy
-from pycldf.sources import Source
 
-from clldutils.path import Path
+from pathlib import Path
 from clldutils.misc import slug
-from pylexibank.dataset import Metadata, Concept
-from pylexibank.dataset import Dataset as BaseDataset
-from pylexibank.util import pb, getEvoBibAsBibtex
+from pylexibank import progressbar
+from pylexibank import Dataset as BaseDataset
+
+from pyconcepticon.api import Concepticon
 
 
 class Dataset(BaseDataset):
     dir = Path(__file__).parent
+    id = 'clics1'
 
-    def cmd_download(self, **kw):
-        src = {}
-        for k in ['List2014f', 'Wold2009', 'Logos2008', 'Key2007',
-                'Saxena2013']:
-            src[k] = getEvoBibAsBibtex(k)
-        self.raw.write(
-                'sources.bib', 
-                '\n\n'.join(src.values())
-                )
-
-    def cmd_install(self, **kw):
-        wl = lingpy.Wordlist(self.raw.posix('D_old-clics.tsv'))
+    def cmd_makecldf(self, args):
+        wl = lingpy.Wordlist(
+                self.raw_dir.joinpath('D_old-clics.tsv').as_posix())
+        args.log.info('loaded wordlist')
 
         src = {
                 'wold': 'Wold2009',
@@ -35,23 +24,34 @@ class Dataset(BaseDataset):
                 'logos': 'Logos2008',
                 'Språkbanken': 'Saxena2013'
                 }
-
-        with self.cldf as ds:
-            ds.add_sources(*self.raw.read_bib())
-            for k in pb(wl, desc='wl-to-cldf'):
-                if wl[k, 'value']:
-                    ds.add_language(
-                        ID=slug(wl[k, 'doculect']),
+        args.writer.add_sources()
+        
+        concepts = set()
+        languages = set()
+        concepticon = {c.id: c.gloss for c in
+                Concepticon().conceptsets.values()}
+        args.log.info('added concepticon')
+        for k in progressbar(wl, desc='wl-to-cldf'):
+            if wl[k, 'value']:
+                if wl[k, 'doculect'] not in languages:
+                    args.writer.add_language(
+                        ID=slug(wl[k, 'doculect'], lowercase=False),
                         Name=wl[k, 'doculect'],
                         Glottocode=wl[k, 'glottolog'])
-                    ds.add_concept(
-                        ID=slug(wl[k, 'concept']),
+                    languages.add(wl[k, 'doculect'])
+                if wl[k, 'concept'] not in concepts:
+                    args.writer.add_concept(
+                        ID=slug(wl[k, 'concept'], lowercase=False),
                         Name=wl[k, 'concept'],
-                        Concepticon_ID=wl[k, 'concepticon_id']
+                        Concepticon_ID=wl[k, 'concepticon_id'],
+                        Concepticon_Gloss=concepticon.get(
+                            wl[k, 'concepticon_id'],
+                            '')
                         )
-                    ds.add_lexemes(
-                        Language_ID=slug(wl[k, 'doculect']),
-                        Parameter_ID=slug(wl[k, 'concept']),
-                        Value=wl[k, 'value'],
-                        Form=wl[k, 'value'],
-                        Source=src.get(wl[k, 'source'], ''))
+                    concepts.add(wl[k, 'concept'])
+                args.writer.add_lexemes(
+                    Language_ID=slug(wl[k, 'doculect'], lowercase=False),
+                    Parameter_ID=slug(wl[k, 'concept'], lowercase=False),
+                    Value=wl[k, 'value'],
+                    Source=src.get(wl[k, 'source'], '')
+                    )
