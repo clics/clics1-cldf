@@ -19,6 +19,6 @@
     "upload_type": "dataset",
     "description": "<p>Cite the source of the dataset as:</p>\n\n<blockquote>\n<p>List, Johann-Mattis, Thomas Mayer, Anselm Terhalle, and Matthias Urban (2014). CLICS: Database of Cross-Linguistic Colexifications. Marburg: Forschungszentrum Deutscher Sprachatlas (Version 1.0).</p>\n</blockquote>",
     "license": {
-        "id": "GPL-3.0"
+        "id": "CC-BY-4.0"
     }
 }

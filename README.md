@@ -4,7 +4,7 @@ Cite the source dataset as
 
 > List, Johann-Mattis, Thomas Mayer, Anselm Terhalle, and Matthias Urban (2014). CLICS: Database of Cross-Linguistic Colexifications. Marburg: Forschungszentrum Deutscher Sprachatlas (Version 1.0).
 
-This dataset is licensed under a GPL-3.0 license
+This dataset is licensed under a CC-BY-4.0 license
 
 Available online at https://zenodo.org/record/1194088
 
@@ -36,8 +36,8 @@ Conceptlists in Concepticon:
 
 # Contributors
 
-Name | GitHub user | Role
+Name | GitHub user | Description | Role
 --- | --- | ---
-Johann-Mattis List | @LinguList | maintainer
+Johann-Mattis List | @LinguList | maintainer | author
 
 
