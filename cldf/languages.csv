@@ -23,7 +23,7 @@ GermanStandardstd,"German, Standard-std",stan1295,German,deu,Eurasia,48.649,12.4
 Kilivilastd,Kilivila-std,kili1267,Kilivila,kij,Papunesia,-8.72574,151.072,Austronesian
 CatalanValencianBalearstd,Catalan-Valencian-Balear-std,stan1289,Catalan,cat,Eurasia,41.453,1.569,Indo-European
 Venetianstd,Venetian-std,vene1258,Venetian,vec,Eurasia,45.503581,12.214167,Indo-European
-Karatastd,Karata-std,kara1474,Karata,kpt,Eurasia,42.6501,46.3151,Nakh-Daghestanian
+Karatastd,Karata-std,kara1474,Karata-Tukita,kpt,Eurasia,42.6501,46.3151,Nakh-Daghestanian
 Lezgistd,Lezgi-std,lezg1247,Lezgian,lez,Eurasia,41.5157,47.8951,Nakh-Daghestanian
 Swedishstd,Swedish-std,swed1254,Swedish,swe,Eurasia,59.800634,17.389526,Indo-European
 MiaoWhitestd,"Miao, White-std",hmon1333,Hmong Daw,mww,Eurasia,21.5461,103.164,Hmong-Mien
@@ -54,7 +54,7 @@ Hausastd,Hausa-std,haus1257,Hausa,hau,Africa,11.1513,8.7804,Afro-Asiatic
 Ketstd,Ket-std,kett1243,Ket,ket,Eurasia,63.7551,87.5466,Yeniseian
 SardinianLogudoresestd,"Sardinian, Logudorese-std",logu1236,Logudorese Sardinian,src,Eurasia,40.49,9.09957,Indo-European
 Khasistd,Khasi-std,khas1269,Khasi,kha,Eurasia,24.977,91.9998,Austroasiatic
-KarataTokitinTokitin,Karata (Tokitin)-Tokitin,kara1474,Karata,kpt,Eurasia,42.6501,46.3151,Nakh-Daghestanian
+KarataTokitinTokitin,Karata (Tokitin)-Tokitin,kara1474,Karata-Tukita,kpt,Eurasia,42.6501,46.3151,Nakh-Daghestanian
 Kumykstd,Kumyk-std,kumy1244,Kumyk,kum,Eurasia,43.0,47.0,Turkic
 Saramaccanstd,Saramaccan-std,sara1340,Saramaccan,srm,South America,4.54729,-54.0238,Indo-European
 Rutulstd,Rutul-std,rutu1240,Rutul,rut,Eurasia,41.6187,47.3244,Nakh-Daghestanian
@@ -66,7 +66,7 @@ Telugustd,Telugu-std,telu1262,Telugu,tel,Eurasia,16.4529,78.7024,Dravidian
 Portuguesestd,Portuguese-std,port1283,Portuguese,por,Eurasia,39.91,-8.1,Indo-European
 Hunzibstd,Hunzib-std,hunz1247,Hunzib,huz,Eurasia,42.0808,46.1369,Nakh-Daghestanian
 AvarKusurKusur,Avar (Kusur)-Kusur,avar1256,Avar,ava,Eurasia,41.7047,46.558,Nakh-Daghestanian
-Rapastd,Rapa-std,rapa1245,Old Rapa,ray,Papunesia,-27.6304,-144.338,Austronesian
+Rapastd,Rapa-std,rapa1245,Mangaia-Old Rapa,ray,Papunesia,-27.6304,-144.338,Austronesian
 Tarifitstd,Tarifit-std,tari1263,Tarifiyt-Beni-Iznasen-Eastern Middle Atlas Berber,rif,Africa,34.916974,-3.430616,Afro-Asiatic
 FarsiWesternstd,"Farsi, Western-std",west2369,Western Farsi,pes,Eurasia,32.9,53.3,Indo-European
 Takiastd,Takia-std,taki1248,Takia,tbc,Papunesia,-4.69057,145.975,Austronesian
@@ -131,7 +131,7 @@ CheqWongstd,Cheq Wong-std,chew1245,Chewong,cwg,Eurasia,3.83331,102.081,Austroasi
 JudeoTatstd,Judeo-Tat-std,jude1256,Judeo-Tat,jdt,Eurasia,42.068306,48.264749,Indo-European
 SaamiNorthstd,"Saami, North-std",nort2671,North Saami,sme,Eurasia,68.725,22.1113,Uralic
 Karokstd,Karok-std,karo1304,Karok,kyh,North America,41.8228,-123.315,Karok
-TzotzilZinacantanstd,"Tzotzil, Zinacantán-std",tzot1264,"Tzotzil, Zinacantán",tzz,North America,,,Bookkeeping
+TzotzilZinacantanstd,"Tzotzil, Zinacantán-std",tzot1264,"Tzotzil, Zinacantán",tzz,North America,16.64,-92.74,Bookkeeping
 Hungarianstd,Hungarian-std,hung1274,Hungarian,hun,Eurasia,46.9068585714,19.6555271429,Uralic
 Kathustd,Kathu-std,kath1251,Thou-Kathu,ykt,Eurasia,24.2,105.1,Sino-Tibetan
 ArabicStandardstd,"Arabic, Standard-std",stan1318,Standard Arabic,arb,Eurasia,27.9625,43.8525,Afro-Asiatic
@@ -190,7 +190,7 @@ Makastd,Maka-std,maca1260,Maca,mca,South America,-25.0119,-57.3694,Matacoan
 Kaingangstd,Kaingang-std,kain1272,Kaingang,kgp,South America,-27.7671,-52.5394,Nuclear-Macro-Je
 Mocovistd,Mocoví-std,moco1246,Mocoví,moc,South America,-28.097,-60.4145,Guaicuruan
 Pumestd,Pumé-std,pume1238,Pumé,yae,South America,7.10677,-67.5996,Pumé
-Yuwanastd,Yuwana-std,yuwa1244,Hoti,yau,South America,5.63879,-65.4267,Jodi-Saliban
+Yuwanastd,Yuwana-std,yuwa1244,Hoti,yau,South America,5.63879,-65.4267,Hoti
 EnapaWoromaipustd,E’ñapa Woromaipu-std,enap1235,Panare,pbh,South America,6.95035,-65.8483,Cariban
 Cavinenastd,Cavineña-std,cavi1250,Cavineña,cav,South America,-13.3544,-66.6277,Pano-Tacanan
 Wayuustd,Wayuu-std,wayu1243,Wayuu,guc,South America,11.395566,-72.199791,Arawakan

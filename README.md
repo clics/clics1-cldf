@@ -1,8 +1,16 @@
 # CLDF dataset derived from List et al.'s "Database of Cross-Linguistic Colexifications (Version 1.0)" from 2014
 
-Cite the source dataset as
+[![CLDF validation](https://github.com/clics/clics1-cldf/workflows/CLDF-validation/badge.svg)](https://github.com/clics/clics1-cldf/actions?query=workflow%3ACLDF-validation)
 
-> List, Johann-Mattis, Thomas Mayer, Anselm Terhalle, and Matthias Urban (2014). CLICS: Database of Cross-Linguistic Colexifications. Marburg: Forschungszentrum Deutscher Sprachatlas (Version 1.0).
+## How to cite
+
+If you use these data please cite
+- the original source
+  > List, Johann-Mattis, Thomas Mayer, Anselm Terhalle, and Matthias Urban (2014). CLICS: Database of Cross-Linguistic Colexifications. Marburg: Forschungszentrum Deutscher Sprachatlas (Version 1.0).
+- the derived dataset using the DOI of the [particular released version](../../releases/) you were using
+
+## Description
+
 
 This dataset is licensed under a CC-BY-4.0 license
 
@@ -14,6 +22,7 @@ Conceptlists in Concepticon:
 ## Statistics
 
 
+[![CLDF validation](https://github.com/clics/clics1-cldf/workflows/CLDF-validation/badge.svg)](https://github.com/clics/clics1-cldf/actions?query=workflow%3ACLDF-validation)
 ![Glottolog: 100%](https://img.shields.io/badge/Glottolog-100%25-brightgreen.svg "Glottolog: 100%")
 ![Concepticon: 100%](https://img.shields.io/badge/Concepticon-100%25-brightgreen.svg "Concepticon: 100%")
 ![Source: 100%](https://img.shields.io/badge/Source-100%25-brightgreen.svg "Source: 100%")
@@ -36,8 +45,15 @@ Conceptlists in Concepticon:
 
 # Contributors
 
-Name | GitHub user | Description | Role
---- | --- | ---
-Johann-Mattis List | @LinguList | maintainer | author
+| Name | GitHub user | Description | Role |
+| --- | --- | --- | --- |
+| Johann-Mattis List | @LinguList | maintainer | author |
 
 
+
+
+## CLDF Datasets
+
+The following CLDF datasets are available in [cldf](cldf):
+
+- CLDF [Wordlist](https://github.com/cldf/cldf/tree/master/modules/Wordlist) at [cldf/cldf-metadata.json](cldf/cldf-metadata.json)
