@@ -21,6 +21,7 @@ setup(
             'clics1=lexibank_clics1:Dataset',
         ]
     },
+    extras_require={"test": ["pytest-cldf"]},
     install_requires=[
         'pylexibank>=3.0',
     ]
